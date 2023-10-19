@@ -1,0 +1,38 @@
+<!-- FILEPATH: /c:/wamp64/www/student_info.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+    <script src="validation.js"></script>
+</head>
+<body>
+    <h1>Student Information Form</h1>
+    <form method="post" action="doInsert.php" onsubmit="return validateForm()">
+        <label for="index_number">Index Number:</label>
+        <input type="text" id="index_number" name="index_number"><br><br>
+
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name"><br><br>
+
+        <label for="enrolled_courses">Enrolled Courses:</label>
+        <select id="enrolled_courses" name="enrolled_courses">
+            <option value="course 1">course 1</option>
+            <option value="course 2">course 2</option>
+            <option value="course 3">course 3</option>
+        </select><br><br>
+
+        <label for="applied_date">Applied Date:</label>
+        <input type="date" id="applied_date" name="applied_date"><br><br>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="pending">Pending</option>
+            <option value="approved">Approved</option>
+            <option value="rejected">Rejected</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
